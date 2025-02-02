@@ -39,13 +39,18 @@ o	Three machine learning models were implemented and evaluated:
 o	The dataset was split into an 80-20 train-test ratio. Models were evaluated on test data using regression metrics.
 
 ## Results
+
 The evaluation metrics for the models are as follows:
-Metric	Linear Regression	Random Forest	XGBoost
-MAE	214,557,243,329.82	4,627.09	4,676.42
-MSE	455,216,423,086,776,278,581,248.00	63,372,259.20	57,189,971.93
-RMSE	674,697,282,554.76	7,960.67	7,562.41
-R² Score	-392,627,383,313,861,313,560,576.0000	0.8073	0.8261
-Best Model: XGBoost Regressor
+
+| Metric  | Linear Regression      | Random Forest | XGBoost |
+|---------|------------------------|--------------|---------|
+| MAE     | 214,557,243,329.82     | 4,627.09     | 4,676.42 |
+| MSE     | 455,216,423,086,776,278,581,248.00 | 63,372,259.20 | 57,189,971.93 |
+| RMSE    | 674,697,282,554.76     | 7,960.67     | 7,562.41 |
+| R² Score | -392,627,383,313,861,313,560,576.0000 | 0.8073 | 0.8261 |
+
+**Best Model: XGBoost Regressor**
+
 
 ## Challenges & Solutions
 •	Feature Importance: Some features (e.g., engine type, trim) had missing values. Solution: Used statistical imputation and encoding techniques to retain their impact.
